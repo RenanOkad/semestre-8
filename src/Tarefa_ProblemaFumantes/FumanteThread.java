@@ -19,11 +19,13 @@ public class FumanteThread extends Thread {
             while (true){
                 ingredienteSemaphore.acquire();
 
+                Thread.sleep(2500);
                 System.out.println("O fumante que tem o ingredinte " + ingrediente + " adquiriu e está fazendo um cigarro");
-                Thread.sleep(1000);
+                Thread.sleep(2500);
                 System.out.println("O fumante está fumando");
+                Thread.sleep(2500);
                 System.out.println("O fumante terminou de fumar\n");
-
+                Thread.sleep(2500);
                 representanteSemaphore.release();
             }
         } catch (InterruptedException e){
