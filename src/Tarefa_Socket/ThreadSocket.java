@@ -8,6 +8,15 @@ public class ThreadSocket {
     private Map<String, Thread> threads = new HashMap<>();
     private final Object monitor = new Object();
 
+    public boolean existeThreads(){
+        if(!threads.isEmpty()){
+            System.out.println("Ja foi criado e ja existem threads no cliente atual! iniciando processamento...");
+            return true;
+        } else{
+            System.out.println("Nao existe threads no cliente atual");
+            return false;
+        }
+    }
 
     public void criarThread(String identificador) {
         System.out.println("Executando a Thread: " + identificador);

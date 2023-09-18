@@ -23,6 +23,7 @@ public class Cliente {
                 System.out.println("4 - notify ");
                 System.out.println("5 - listar Threads ");
                 System.out.println("6 - listar individuos que começam o nome com a letra R ");
+                System.out.println("7 - Limpar linhas de individuos lidos ");
                 texto = entrada.nextInt();
                 saida.println(texto);
                 if(texto == 2 ||
